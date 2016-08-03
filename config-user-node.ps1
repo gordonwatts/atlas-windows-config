@@ -24,3 +24,7 @@ install-or-update "PSAtlasDatasetCommands"
 
 # Finally, list it all.
 Get-Module -ListAvailable
+
+# And the result of the location
+Write-Host "GRID Location Info"
+Get-GridDataLocations
