@@ -2,6 +2,9 @@
 # Run to configure a node with the tools we often use to do work.
 #
 
+Write-Host "Current execution policy"
+Get-ExecutionPolicy
+
 # See if the package feed is there. If not, then install it.
 $repo = Get-PSRepository | ? {$_.Name -eq "atlas-myget"}
 if (!$repo) {
