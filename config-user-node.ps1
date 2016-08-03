@@ -4,6 +4,7 @@
 
 Write-Host "Current execution policy"
 Get-ExecutionPolicy
+Get-PackageProvider
 
 # See if the package feed is there. If not, then install it.
 $repo = Get-PSRepository | ? {$_.Name -eq "atlas-myget"}
