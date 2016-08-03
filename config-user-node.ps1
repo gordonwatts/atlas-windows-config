@@ -21,3 +21,6 @@ function install-or-update ($module)
 
 install-or-update "PSJenkinsAccessCommands"
 install-or-update "PSAtlasDatasetCommands"
+
+# Finally, list it all.
+Get-Module -ListAvailable
